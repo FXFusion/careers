@@ -1,0 +1,77 @@
+@import "bourbon/bourbon";
+@import "base/grid-settings";
+@import "neat/neat";
+@import "base/base";
+
+@import "header";
+@import "footer";
+
+html,
+ body {
+   height: 100%;
+   margin: 0;
+ }
+
+header,
+.main-content {
+  @include outer-container;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-content {
+  margin-bottom: 5rem;
+  min-height: 70%;
+  & > section {
+    @include row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  & > section:first-of-type {
+    margin-top: 0;
+  }
+}
+
+section {
+  .section-image {
+    display: none;
+  }
+  @include media($medium-screen-up) {
+    .section-text {
+      @include span-columns(2);
+    }
+    .section-image {
+      @include span-columns(1);
+      display: block;
+    }
+  }
+}
+
+
+.gradient-separator {
+  @include linear-gradient($secondary-color-transparent, $transparent-0, $fallback: $transparent-0);
+  width: 100%;
+  height: 12.5rem;
+  margin-bottom: -9rem;
+}
+
+body.details {
+  @include media($medium-screen-up) {
+    .main-content {
+      text-align: center;
+    }
+
+    ol {
+      text-align: left;
+      max-width: 640px;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.job-list {
+  list-style: none;
+  padding-left: 1rem;
+}

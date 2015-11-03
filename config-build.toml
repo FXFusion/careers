@@ -1,4 +1,4 @@
-baseurl = "http://localhost:1313"
+baseurl = "http://careers.fivewalls.com/"
 languageCode = "en-us"
 title = "Fivewalls Careers"
 theme = "fivewalls"
@@ -9,3 +9,5 @@ associated logos are owned by CREA and identify the quality of services provided
 members of CREA.
 
 Copyright 2015 fivewalls realty. All Rights Reserved.'''
+[Params]
+gaid = "UA-64925014-5"

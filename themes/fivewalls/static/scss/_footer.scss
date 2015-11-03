@@ -1,0 +1,58 @@
+.cta {
+  background-color: $secondary-color;
+  color: $white;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+
+  a {
+    color: $white;
+    display: block;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+footer {
+  background-color: $dark-footer;
+  bottom: 0;
+  font-size: 0.7rem;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+
+  .links {
+    background-color: $light-footer;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    @include media($medium-screen-up) {
+      text-align: right;
+    }
+  }
+
+  .social {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .facebook {
+    background-image: url(../images/social_icons/Facebook@2x.png);
+  }
+
+  .twitter {
+    background-image: url(../images/social_icons/Twitter@2x.png);
+  }
+
+  .instagram {
+    background-image: url(../images/social_icons/Instagram@2x.png);
+  }
+
+  p {
+    font-size: 0.7rem;
+    margin: auto;
+    padding: 0 1rem;
+  }
+}

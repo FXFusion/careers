@@ -1,0 +1,35 @@
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+  <section id="main">
+    <div class="gradient-separator"></div>
+    <div class="main-content">
+      <h2>{{ .Title }}</h2>
+      <section id="description">
+        <p>{{ .Content }}</p>
+      </section>
+      <section id="responsibilities">
+        <h3>Your responsibilities</h3>
+        <ul>
+          {{ range .Params.duties }}
+          <li>
+            {{ . }}
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+      <section id="skills">
+        <h3>Ideal Qualities</h3>
+        <ul>
+          {{ range .Params.qualifications }}
+          <li>
+          {{ . }}
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+    </div>
+  </section>
+  {{ partial "footer.html" . }}
+</body>
+{{ partial "foot.html" . }}

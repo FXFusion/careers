@@ -1,0 +1,22 @@
+header {
+  padding-top: 1rem;
+  margin: 0 auto;
+  max-width: 62.5rem;
+
+  img {
+    max-width: 200px;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  .links {
+    list-style: none;
+    float: right;
+
+    li {
+      display: inline;
+    }
+  }
+}

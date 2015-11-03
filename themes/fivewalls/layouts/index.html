@@ -1,0 +1,40 @@
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    <section id="main">
+      <div class="gradient-separator"></div>
+      <div class="main-content">
+        <section id="who-we-are">
+          <h2>Who are we?</h2>
+          <p>
+            fivewalls creates a new modern way for people to find and work with the real estate agent who finds them a home
+            to buy or sell.
+          </p>
+          <p>
+            We believe buying or selling a home is all about where you place your trust. It’s the fifth
+            wall of a home. Reputation is everything – and fivewalls provides you with a new way that reaffirms the timeless
+            truth that people want to do business with people they like and trust.
+          </p>
+        </section>
+        <section id="why-fivewalls">
+          <h2>Why fivewalls?</h2>
+          <p>We are a young startup that's chaning the way people find the professional help they need to buy or sell a home.</p>
+          <p>
+            A career here means a chance to impact the growth and direction of a company.  We're looking for driven
+            individuals who thrive in a fast-paced environment.
+          </p>
+        </section>
+        <section id="jobs">
+          <h2>See our latest openings</h2>
+          <ul class='job-list'>
+            {{ $jobs := where .Data.Pages ".Section" "job" }}
+            {{ range $jobs }}
+            {{ .Render "li" }}
+            {{ end }}
+          </ul>
+        </section>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+  </body>
+  {{ partial "foot.html" . }}
