@@ -13,7 +13,6 @@ duties = [
   "Resolve objections and/or complaints",
   "Administrative duties as required",
 ]
-level = "Entry"
 qualifications = [
   "Completed a University Degree or College Diploma in Business, Marketing, Social Media Marketing or related field",
   "Strong expertise with Social Media and ability to network",
