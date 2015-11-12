@@ -11,3 +11,4 @@ members of CREA.
 Copyright 2015 fivewalls realty. All Rights Reserved.'''
 [Params]
 gaid = "UA-64925014-5"
+company_name = "fivewalls"

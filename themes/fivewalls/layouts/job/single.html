@@ -1,10 +1,12 @@
 {{ partial "head.html" . }}
-<body>
+<body class='job-description'>
   {{ partial "header.html" . }}
+  <section class="hero" style="background-image: url({{ .Site.BaseURL}}images/{{ .Params.hero_image }})">
+    <h1>{{ .Title }}</h1>
+  </section>
   <section id="main">
-    <div class="gradient-separator"></div>
     <div class="main-content">
-      <h2>{{ .Title }}</h2>
+      <em>{{ .Params.location }}</em>
       <section id="description">
         <p>{{ .Content }}</p>
       </section>
@@ -27,6 +29,9 @@
           </li>
           {{ end }}
         </ul>
+      </section>
+      <section id="company-pitch">
+        {{ partial "company_pitch.html" }}
       </section>
     </div>
   </section>

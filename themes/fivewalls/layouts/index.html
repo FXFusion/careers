@@ -1,27 +1,19 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "header.html" . }}
+    <section class="hero" style="background-image: url({{ .Site.BaseURL}}images/hero.jpg)">
+      <h2>Redefining Trust in Real Estate</h2>
+      <section id="who-are-we">
+        {{ partial "description.html" . }}
+      </section>
+    </section>
     <section id="main">
-      <div class="gradient-separator"></div>
       <div class="main-content">
-        <section id="who-we-are">
-          <h2>Who are we?</h2>
-          <p>
-            fivewalls creates a new way for people to find and work with a real estate agent.
-          </p>
-          <p>
-            We believe buying or selling a home is all about where you place your trust. It's the fifth
-            wall of a home.
-          </p>
+        <section id="why-us">
+          <h2>Why {{ .Site.Params.company_name }}?</h2>
+          {{ partial "company_pitch.html" . }}
         </section>
-        <section id="why-fivewalls">
-          <h2>Why fivewalls?</h2>
-          <p>We are a young startup that's changing the way people find the professional help they need to buy or sell a home.</p>
-          <p>
-            A career here means a chance to impact the growth and direction of a company.  We're looking for driven
-            individuals who thrive in a fast-paced environment.
-          </p>
-        </section>
+        <div class="gradient-separator"></div>
         <section id="jobs">
           <h2>See our latest openings</h2>
           <ul class='job-list'>

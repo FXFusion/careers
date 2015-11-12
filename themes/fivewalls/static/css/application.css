@@ -287,26 +287,33 @@ body {
   height: 100%;
   margin: 0; }
 
-header,
-.main-content {
+header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem; }
-  header::after,
-  .main-content::after {
+  header::after {
     clear: both;
     content: "";
     display: table; }
 
 .main-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 5rem;
   min-height: 70%; }
+  .main-content::after {
+    clear: both;
+    content: "";
+    display: table; }
   .main-content > section {
     display: block;
     margin-top: 5rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
     .main-content > section::after {
       clear: both;
       content: "";
@@ -353,5 +360,37 @@ section .section-image {
 .job-list {
   list-style: none;
   padding-left: 1rem; }
+  .job-list li {
+    margin-top: 1rem; }
+
+.hero {
+  background-size: cover;
+  color: #FFF;
+  height: 500px;
+  position: relative; }
+  .hero h2 {
+    background-color: rgba(70, 106, 125, 0.6);
+    color: #FFF;
+    padding: 2rem;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    text-align: center; }
+  .hero h1 {
+    background-color: rgba(0, 183, 175, 0.6);
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 2rem;
+    text-align: center;
+    top: 200px;
+    left: 1rem; }
+  .hero section {
+    background-color: rgba(0, 183, 175, 0.6);
+    bottom: 0;
+    padding: 1rem 1rem 0 2rem;
+    position: absolute;
+    right: 1rem; }
 
 /*# sourceMappingURL=application.css.map */

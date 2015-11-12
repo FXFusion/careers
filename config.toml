@@ -9,3 +9,6 @@ associated logos are owned by CREA and identify the quality of services provided
 members of CREA.
 
 Copyright 2015 fivewalls realty. All Rights Reserved.'''
+
+[Params]
+company_name = "fivewalls"
