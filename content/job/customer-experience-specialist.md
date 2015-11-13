@@ -9,7 +9,7 @@ duties = [
   "Onboard realtors for each new 'boardprint' of expansion",
 	"Build a group of realtor on-line advocates for fivewalls who willingly give advice on product development and branding",
   "Manage all online and phone inquiries to fivewalls",
-  "Manage  communications with the fivewalls’ advisory group and help to maintain strong relationships with al",
+  "Manage communications with the fivewalls' advisory group and help to maintain strong relationships with all.",
   "Resolve objections and/or complaints",
   "Administrative duties as required",
 ]
