@@ -18,7 +18,7 @@ qualifications = [
   "Previous experience with any of: Javascript, AngularJS, SQL, AWS, Git, Ruby on Rails, Bash, Go"
 ]
 title = "Web Application Developer"
-location = "Guelph, Ontario"
+location = "Waterloo, Ontario"
 hero_image = "hero.jpg"
 +++
 
